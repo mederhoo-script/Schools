@@ -192,19 +192,19 @@
                 <!-- Right Column - Statistics -->
                 <div class="grid grid-cols-2 gap-8">
                     <div class="text-center">
-                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4000">0</div>
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4000" data-has-plus="true">0</div>
                         <div class="text-sm text-dark-gray">students in the 2024-25 academic year</div>
                     </div>
                     <div class="text-center">
-                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4.6">0</div>
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4.6" data-has-plus="false">0</div>
                         <div class="text-sm text-dark-gray">average years spent at SAS</div>
                     </div>
                     <div class="text-center">
-                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="72">0</div>
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="72" data-has-plus="false">0</div>
                         <div class="text-sm text-dark-gray">unique passports</div>
                     </div>
                     <div class="text-center">
-                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="300">0</div>
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="300" data-has-plus="true">0</div>
                         <div class="text-sm text-dark-gray">total co-curricular programs</div>
                     </div>
                 </div>
@@ -367,8 +367,7 @@
                 if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
                     entry.target.classList.add('animated');
                     const target = parseFloat(entry.target.getAttribute('data-target'));
-                    const hasPlus = entry.target.parentElement.querySelector('.text-sm').textContent.includes('4000') || 
-                                   entry.target.parentElement.querySelector('.text-sm').textContent.includes('300');
+                    const hasPlus = entry.target.getAttribute('data-has-plus') === 'true';
                     const isDecimal = target === 4.6;
                     
                     animateCounter(entry.target, target, hasPlus, isDecimal);
