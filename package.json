@@ -1,0 +1,16 @@
+{
+  "name": "school-marketing-site",
+  "version": "1.0.0",
+  "description": "Static, reusable marketing site for schools",
+  "scripts": {
+    "build:css": "tailwindcss -i ./site/css/input.css -o ./site/css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./site/css/input.css -o ./site/css/styles.css --watch",
+    "build": "npm run build:css"
+  },
+  "keywords": ["school", "marketing", "static-site", "tailwindcss"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

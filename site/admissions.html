@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admissions information for Example School">
+  <title>Admissions - Example School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="font-['Inter'] antialiased bg-gray-50">
+  
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+  
+  <header class="bg-white shadow-md sticky top-0 z-30">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="/" class="flex items-center space-x-3 focus-visible">
+          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">ES</span>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Example School</span>
+        </a>
+        
+        <nav role="navigation" class="hidden lg:flex items-center space-x-6" aria-label="Main navigation">
+          <a href="/about.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">About</a>
+          <a href="/admissions.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Admissions</a>
+          <a href="/academics.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Academics</a>
+          <a href="#" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Student Life</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Contact</a>
+          <a href="/admissions.html" class="btn btn-primary">Apply Now</a>
+        </nav>
+        
+        <button 
+          data-menu-toggle 
+          aria-expanded="false" 
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation menu"
+          class="lg:hidden p-2 focus-visible">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <nav id="mobile-menu" class="mobile-menu" aria-expanded="false" aria-label="Mobile navigation">
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-6">
+        <span class="text-xl font-bold">Menu</span>
+        <button data-menu-toggle aria-label="Close menu" class="p-2 focus-visible">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <a href="/about.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">About</a>
+        <a href="/admissions.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Admissions</a>
+        <a href="/academics.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Academics</a>
+        <a href="#" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Student Life</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Contact</a>
+        <a href="/admissions.html" class="btn btn-primary mt-4">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main id="main-content">
+    
+    <section class="bg-gradient-to-br from-primary-900 to-primary-700 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl reveal">
+          <h1 class="text-5xl font-bold mb-4">Admissions</h1>
+          <p class="text-xl opacity-90">
+            Join our vibrant community of learners from around the world.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Application Process</h2>
+            <p class="text-lg text-gray-700 mb-8">
+              We welcome applications from families who share our commitment to academic excellence and community values.
+            </p>
+          </div>
+          
+          <div class="space-y-6">
+            <div class="reveal bg-white border-l-4 border-primary-600 p-6 shadow-md rounded-r-lg" data-delay="1">
+              <div class="flex items-start">
+                <div class="bg-primary-100 text-primary-600 font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mr-4">1</div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Submit Application</h3>
+                  <p class="text-gray-700">
+                    Complete our online application form and submit required documents including transcripts and recommendations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="reveal bg-white border-l-4 border-primary-600 p-6 shadow-md rounded-r-lg" data-delay="2">
+              <div class="flex items-start">
+                <div class="bg-primary-100 text-primary-600 font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mr-4">2</div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Campus Visit</h3>
+                  <p class="text-gray-700">
+                    Schedule a campus tour to experience our school community and meet with faculty and students.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="reveal bg-white border-l-4 border-primary-600 p-6 shadow-md rounded-r-lg" data-delay="3">
+              <div class="flex items-start">
+                <div class="bg-primary-100 text-primary-600 font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mr-4">3</div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Interview & Assessment</h3>
+                  <p class="text-gray-700">
+                    Participate in a student interview and complete any required assessments.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="reveal bg-white border-l-4 border-primary-600 p-6 shadow-md rounded-r-lg" data-delay="4">
+              <div class="flex items-start">
+                <div class="bg-primary-100 text-primary-600 font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mr-4">4</div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Admission Decision</h3>
+                  <p class="text-gray-700">
+                    Receive your admission decision and enrollment information within 2-3 weeks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="tuition" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Tuition & Fees</h2>
+            <p class="text-lg text-gray-700 mb-8">
+              We believe in transparent pricing and making quality education accessible to all families.
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="card reveal" data-delay="1">
+              <div class="p-8">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Annual Tuition</h3>
+                <div class="text-5xl font-bold text-primary-600 mb-4">$35,000</div>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>All academic programs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Textbooks and materials</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Technology access</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Most activities and clubs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card reveal" data-delay="2">
+              <div class="p-8">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Additional Fees</h3>
+                <div class="space-y-4 text-gray-700">
+                  <div class="flex justify-between items-center pb-4 border-b">
+                    <span>Application Fee</span>
+                    <span class="font-bold">$150</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b">
+                    <span>New Student Fee</span>
+                    <span class="font-bold">$500</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b">
+                    <span>Transportation (optional)</span>
+                    <span class="font-bold">$2,500</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b">
+                    <span>Lunch Program (optional)</span>
+                    <span class="font-bold">$2,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="aid" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal mb-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Financial Aid</h2>
+            <p class="text-lg text-gray-700 mb-6">
+              We are committed to making Example School accessible to qualified students regardless of financial circumstances. Over 40% of our students receive some form of financial assistance.
+            </p>
+            
+            <div class="bg-primary-50 border-l-4 border-primary-600 p-8 rounded-r-lg">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Need-Based Aid</h3>
+              <p class="text-gray-700 mb-4">
+                Financial aid awards are based on demonstrated need and range from partial to full tuition coverage.
+              </p>
+              <a href="#" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition">
+                Apply for Financial Aid
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-20 bg-primary-600 text-white">
+      <div class="container mx-auto px-4 text-center reveal">
+        <h2 class="text-4xl font-bold mb-6">Ready to Apply?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          Start your application today or schedule a campus visit to learn more about Example School.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#" class="btn bg-white text-primary-600 hover:bg-gray-100">Start Application</a>
+          <a href="#contact" class="btn border-2 border-white text-white hover:bg-white hover:text-primary-600">Schedule a Visit</a>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer id="contact" class="bg-gray-900 text-gray-300">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div>
+          <h3 class="text-white font-bold mb-4">About</h3>
+          <ul class="space-y-2">
+            <li><a href="/about.html" class="hover:text-white transition focus-visible">Our Mission</a></li>
+            <li><a href="/about.html#history" class="hover:text-white transition focus-visible">History</a></li>
+            <li><a href="/about.html#leadership" class="hover:text-white transition focus-visible">Leadership</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Academics</h3>
+          <ul class="space-y-2">
+            <li><a href="/academics.html" class="hover:text-white transition focus-visible">Programs</a></li>
+            <li><a href="/academics.html#faculty" class="hover:text-white transition focus-visible">Faculty</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Calendar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Admissions</h3>
+          <ul class="space-y-2">
+            <li><a href="/admissions.html" class="hover:text-white transition focus-visible">Apply</a></li>
+            <li><a href="/admissions.html#tuition" class="hover:text-white transition focus-visible">Tuition</a></li>
+            <li><a href="/admissions.html#aid" class="hover:text-white transition focus-visible">Financial Aid</a></li>
+            <li><a href="#contact" class="hover:text-white transition focus-visible">Visit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Connect</h3>
+          <ul class="space-y-2">
+            <li><a href="#contact" class="hover:text-white transition focus-visible">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">News</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Stay Connected</h3>
+          <div class="space-y-3 mb-6">
+            <p class="text-sm">123 Education Lane<br>City, State 12345</p>
+            <p class="text-sm">(555) 123-4567</p>
+            <p class="text-sm">info@exampleschool.edu</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center text-sm">
+        <p>&copy; 2026 Example School. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/main.js"></script>
+  <noscript>
+    <style>
+      .reveal { opacity: 1; transform: translateY(0); }
+    </style>
+  </noscript>
+</body>
+</html>
