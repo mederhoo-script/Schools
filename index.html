@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore American School - Home</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom font families */
+        .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .font-sans {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom colors via Tailwind config */
+        :root {
+            --navy: #0a1929;
+            --gold: #c4a03b;
+            --light-gray: #f5f7fa;
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#0a1929',
+                        'navy-light': '#1a2a3a',
+                        'gold': '#c4a03b',
+                        'gold-dark': '#a67c00',
+                        'light-gray': '#f5f7fa',
+                        'dark-gray': '#333333'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'Georgia', 'serif'],
+                        'sans': ['Inter', 'Helvetica Neue', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-dark-gray">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-serif font-bold text-navy">SAS</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">Home</a>
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">About</a>
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">Admissions</a>
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">Academics</a>
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">Student Life</a>
+                    <a href="#" class="text-dark-gray hover:text-navy transition-colors duration-200 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark-gray hover:text-navy focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">Home</a>
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">About</a>
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">Admissions</a>
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">Academics</a>
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">Student Life</a>
+                <a href="#" class="block py-2 text-dark-gray hover:text-navy transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center mt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://placehold.co/1600x900/1a2a3a/ffffff?text=SAS+Campus" 
+                 alt="SAS Campus" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-navy/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6">Home</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Welcome to Singapore American School</p>
+            <a href="#eagle-way" class="inline-block bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 text-lg">
+                Discover The Eagle Way
+            </a>
+        </div>
+    </section>
+
+    <!-- The Eagle Way Section -->
+    <section id="eagle-way" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy text-center mb-16">
+                The Eagle Way is About...
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Excellence -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-navy mb-4">Excellence</h3>
+                    <p class="text-dark-gray leading-relaxed">
+                        Engaging our students through personalized pathways and challenging them to be their best selves
+                    </p>
+                </div>
+                
+                <!-- Extraordinary Care -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-navy mb-4">Extraordinary Care</h3>
+                    <p class="text-dark-gray leading-relaxed">
+                        Meeting our students where they are by building community for them to be who they are
+                    </p>
+                </div>
+                
+                <!-- Possibilities -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-compass text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-navy mb-4">Possibilities</h3>
+                    <p class="text-dark-gray leading-relaxed">
+                        Encouraging our students to think outside the box through a fulfilling mix of academic and co-curricular activities
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasons to Soar Section -->
+    <section class="py-20 bg-light-gray">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-xl md:text-2xl text-dark-gray leading-relaxed">
+                    Choosing Singapore American School means embracing excellence, innovation, and endless opportunities. 
+                    Personalized learning, extraordinary care, and a vibrant community help students thrive, explore their 
+                    passions, and prepare for a future full of possibilities. Discover why SAS is the ideal place for your 
+                    child's educational journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Life & Statistics Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text -->
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-6">
+                        Our Students: A Well-Rounded Student Life
+                    </h2>
+                    <p class="text-lg text-dark-gray leading-relaxed">
+                        Our Eagles learn to think critically, collaborate with peers from diverse cultural backgrounds, 
+                        and face unique challenges as they discover their passion and purpose in school.
+                    </p>
+                </div>
+                
+                <!-- Right Column - Statistics -->
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4000">0</div>
+                        <div class="text-sm text-dark-gray">students in the 2024-25 academic year</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="4.6">0</div>
+                        <div class="text-sm text-dark-gray">average years spent at SAS</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="72">0</div>
+                        <div class="text-sm text-dark-gray">unique passports</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number text-5xl md:text-6xl font-bold text-navy mb-2" data-target="300">0</div>
+                        <div class="text-sm text-dark-gray">total co-curricular programs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future & Graduates Section -->
+    <section class="py-20 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text -->
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">
+                        Cultivating Exceptional Thinkers
+                    </h2>
+                    <h3 class="font-serif text-2xl md:text-3xl font-semibold text-gold mb-6">
+                        Prepared for the Future
+                    </h3>
+                    <p class="text-lg text-dark-gray leading-relaxed">
+                        University is an important milestone in the lifelong learning journey cherished by the SAS community. 
+                        Our graduates are remarkable young adults, equipped not just for college but for life beyond. 
+                        After all, education should inspire, not just instruct.
+                    </p>
+                </div>
+                
+                <!-- Right Column - Image -->
+                <div>
+                    <img src="https://placehold.co/600x400/1a2a3a/ffffff?text=Graduate+Profile" 
+                         alt="Graduate Profile" 
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonial Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-light-gray rounded-lg p-8 md:p-12 shadow-lg">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <!-- Circular Image -->
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/150x150/1a2a3a/ffffff?text=SS" 
+                             alt="Sebastian Street" 
+                             class="w-32 h-32 rounded-full border-4 border-gold">
+                    </div>
+                    
+                    <!-- Testimonial Content -->
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-serif text-2xl md:text-3xl font-bold text-navy mb-2">
+                            Class of 2025 Sebastian Street
+                        </h3>
+                        <h4 class="text-xl text-gold font-semibold mb-6">
+                            Film and Television Production in Sunny LA
+                        </h4>
+                        <p class="text-lg text-dark-gray leading-relaxed italic">
+                            "SAS gave me many opportunities to work with large casts and crews, which is unusual in a high school. 
+                            Whether it was checking out S$40,000 worth of film equipment to shoot a Studio41 segment or leading 
+                            a 30-student team filming inspiring performances at IASAS Cultural Convention, I know for certain 
+                            that the school's incredible resources and opportunities helped me find my passion for film directing."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section -->
+    <section class="py-20 bg-navy text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">
+                Come and Experience The Eagle Way
+            </h2>
+            <p class="text-xl md:text-2xl mb-10 leading-relaxed">
+                Where excellence, extraordinary care, and possibilities unite to define each student's remarkable journey.
+            </p>
+            <a href="#" class="inline-block bg-gold hover:bg-gold-dark text-white font-semibold px-10 py-5 rounded-lg transition-colors duration-200 text-lg">
+                Schedule a Visit
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-light text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold mb-4">About SAS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Mission & Vision</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Leadership</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">History</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Admissions</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Academics</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Student Life</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-xl font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Visit Campus</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors duration-200">Social Media</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-8 text-center">
+                <p class="text-sm">&copy; 2026 Singapore American School. For concept purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Stat Counter Animation
+        function animateCounter(element, target, hasPlus = false, isDecimal = false) {
+            const duration = 2000; // 2 seconds
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                if (isDecimal) {
+                    element.textContent = current.toFixed(1) + (hasPlus ? '+' : '');
+                } else {
+                    element.textContent = Math.floor(current) + (hasPlus ? '+' : '');
+                }
+            }, duration / steps);
+        }
+
+        // Intersection Observer for Stat Counters
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                    const target = parseFloat(entry.target.getAttribute('data-target'));
+                    const hasPlus = entry.target.parentElement.querySelector('.text-sm').textContent.includes('4000') || 
+                                   entry.target.parentElement.querySelector('.text-sm').textContent.includes('300');
+                    const isDecimal = target === 4.6;
+                    
+                    animateCounter(entry.target, target, hasPlus, isDecimal);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all stat numbers
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            statObserver.observe(stat);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
