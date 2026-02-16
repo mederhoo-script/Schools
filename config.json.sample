@@ -1,0 +1,209 @@
+{
+  "site": {
+    "title": "Example School",
+    "description": "A world-class education for the next generation of leaders",
+    "logo": "/assets/images/logo.svg"
+  },
+  "nav": [
+    {
+      "label": "About",
+      "url": "/about.html",
+      "children": []
+    },
+    {
+      "label": "Admissions",
+      "url": "/admissions.html",
+      "children": []
+    },
+    {
+      "label": "Academics",
+      "url": "/academics.html",
+      "children": []
+    },
+    {
+      "label": "Student Life",
+      "url": "#",
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "url": "#contact",
+      "children": []
+    }
+  ],
+  "hero": {
+    "image": "/assets/images/hero.jpg",
+    "title": "A World-Class Education",
+    "subtitle": "Innovative learning, global community, and transformative experiences",
+    "primaryCta": {
+      "label": "Apply Now",
+      "url": "/admissions.html"
+    },
+    "secondaryCta": {
+      "label": "Visit Campus",
+      "url": "#contact"
+    }
+  },
+  "programs": [
+    {
+      "image": "/assets/images/academics.jpg",
+      "title": "Academic Excellence",
+      "text": "Rigorous curriculum designed to challenge and inspire students to reach their full potential.",
+      "url": "/academics.html"
+    },
+    {
+      "image": "/assets/images/admissions.jpg",
+      "title": "Join Our Community",
+      "text": "Discover how to become part of our diverse and welcoming school community.",
+      "url": "/admissions.html"
+    },
+    {
+      "image": "/assets/images/student-life.jpg",
+      "title": "Student Life",
+      "text": "Explore clubs, sports, arts, and activities that enrich the student experience.",
+      "url": "#"
+    }
+  ],
+  "events": [
+    {
+      "image": "/assets/images/event1.jpg",
+      "title": "Open House 2026",
+      "date": "March 15, 2026",
+      "description": "Join us for a tour of our campus and meet our faculty and students."
+    },
+    {
+      "image": "/assets/images/event2.jpg",
+      "title": "Spring Concert",
+      "date": "April 20, 2026",
+      "description": "Experience our talented students perform in the annual spring concert."
+    },
+    {
+      "image": "/assets/images/event3.jpg",
+      "title": "Science Fair",
+      "date": "May 10, 2026",
+      "description": "See innovative projects from our young scientists and engineers."
+    }
+  ],
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Students"
+    },
+    {
+      "value": "50+",
+      "label": "Faculty Members"
+    },
+    {
+      "value": "98%",
+      "label": "College Acceptance"
+    },
+    {
+      "value": "30+",
+      "label": "Countries Represented"
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "title": "About",
+        "links": [
+          {
+            "label": "Our Mission",
+            "url": "/about.html"
+          },
+          {
+            "label": "History",
+            "url": "/about.html#history"
+          },
+          {
+            "label": "Leadership",
+            "url": "/about.html#leadership"
+          },
+          {
+            "label": "Careers",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Academics",
+        "links": [
+          {
+            "label": "Programs",
+            "url": "/academics.html"
+          },
+          {
+            "label": "Faculty",
+            "url": "/academics.html#faculty"
+          },
+          {
+            "label": "Calendar",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Admissions",
+        "links": [
+          {
+            "label": "Apply",
+            "url": "/admissions.html"
+          },
+          {
+            "label": "Tuition",
+            "url": "/admissions.html#tuition"
+          },
+          {
+            "label": "Financial Aid",
+            "url": "/admissions.html#aid"
+          },
+          {
+            "label": "Visit",
+            "url": "#contact"
+          }
+        ]
+      },
+      {
+        "title": "Connect",
+        "links": [
+          {
+            "label": "Contact Us",
+            "url": "#contact"
+          },
+          {
+            "label": "News",
+            "url": "#"
+          },
+          {
+            "label": "Events",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "address": "123 Education Lane",
+      "city": "City, State 12345",
+      "phone": "(555) 123-4567",
+      "email": "info@exampleschool.edu"
+    },
+    "social": [
+      {
+        "platform": "facebook",
+        "url": "#"
+      },
+      {
+        "platform": "twitter",
+        "url": "#"
+      },
+      {
+        "platform": "instagram",
+        "url": "#"
+      },
+      {
+        "platform": "linkedin",
+        "url": "#"
+      }
+    ]
+  }
+}

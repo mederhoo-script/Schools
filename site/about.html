@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Example School's mission, history, and leadership">
+  <title>About - Example School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="font-['Inter'] antialiased bg-gray-50">
+  
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+  
+  <!-- Header (same as index.html) -->
+  <header class="bg-white shadow-md sticky top-0 z-30">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="/" class="flex items-center space-x-3 focus-visible">
+          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">ES</span>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Example School</span>
+        </a>
+        
+        <nav role="navigation" class="hidden lg:flex items-center space-x-6" aria-label="Main navigation">
+          <a href="/about.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">About</a>
+          <a href="/admissions.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Admissions</a>
+          <a href="/academics.html" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Academics</a>
+          <a href="#" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Student Life</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary-600 transition font-medium focus-visible">Contact</a>
+          <a href="/admissions.html" class="btn btn-primary">Apply Now</a>
+        </nav>
+        
+        <button 
+          data-menu-toggle 
+          aria-expanded="false" 
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation menu"
+          class="lg:hidden p-2 focus-visible">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav id="mobile-menu" class="mobile-menu" aria-expanded="false" aria-label="Mobile navigation">
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-6">
+        <span class="text-xl font-bold">Menu</span>
+        <button data-menu-toggle aria-label="Close menu" class="p-2 focus-visible">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <a href="/about.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">About</a>
+        <a href="/admissions.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Admissions</a>
+        <a href="/academics.html" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Academics</a>
+        <a href="#" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Student Life</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary-600 transition font-medium py-2 focus-visible">Contact</a>
+        <a href="/admissions.html" class="btn btn-primary mt-4">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main id="main-content">
+    
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-primary-900 to-primary-700 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl reveal">
+          <h1 class="text-5xl font-bold mb-4">About Us</h1>
+          <p class="text-xl opacity-90">
+            Discover our mission, values, and the people who make Example School a world-class institution.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-700 mb-4">
+              At Example School, we are committed to providing a transformative educational experience that prepares students for success in an increasingly complex and interconnected world.
+            </p>
+            <p class="text-lg text-gray-700">
+              Through rigorous academics, character development, and a nurturing community, we empower students to become critical thinkers, compassionate leaders, and lifelong learners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="reveal mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our History</h2>
+            <p class="text-lg text-gray-700 mb-4">
+              Founded in 1950, Example School has a rich tradition of academic excellence and innovation in education. For over seven decades, we have been shaping the minds and hearts of students from around the world.
+            </p>
+            <p class="text-lg text-gray-700">
+              From our humble beginnings with just 50 students, we have grown into a vibrant community of over 500 students and 50 faculty members, representing more than 30 countries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-gray-900 mb-12 reveal">Our Leadership</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="card reveal" data-delay="1">
+              <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Dr. Jane Smith</h3>
+                <p class="text-primary-600 font-semibold mb-3">Head of School</p>
+                <p class="text-gray-600">
+                  Dr. Smith brings over 20 years of experience in education leadership and is passionate about innovative learning approaches.
+                </p>
+              </div>
+            </div>
+            
+            <div class="card reveal" data-delay="2">
+              <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600"></div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">John Doe</h3>
+                <p class="text-primary-600 font-semibold mb-3">Director of Academics</p>
+                <p class="text-gray-600">
+                  John has dedicated his career to curriculum development and ensuring every student reaches their full potential.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary-600 text-white">
+      <div class="container mx-auto px-4 text-center reveal">
+        <h2 class="text-4xl font-bold mb-6">Want to Learn More?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          Schedule a campus tour or reach out to our admissions team.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/admissions.html" class="btn bg-white text-primary-600 hover:bg-gray-100">Apply Now</a>
+          <a href="#contact" class="btn border-2 border-white text-white hover:bg-white hover:text-primary-600">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Footer (same as index.html) -->
+  <footer id="contact" class="bg-gray-900 text-gray-300">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div>
+          <h3 class="text-white font-bold mb-4">About</h3>
+          <ul class="space-y-2">
+            <li><a href="/about.html" class="hover:text-white transition focus-visible">Our Mission</a></li>
+            <li><a href="/about.html#history" class="hover:text-white transition focus-visible">History</a></li>
+            <li><a href="/about.html#leadership" class="hover:text-white transition focus-visible">Leadership</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Academics</h3>
+          <ul class="space-y-2">
+            <li><a href="/academics.html" class="hover:text-white transition focus-visible">Programs</a></li>
+            <li><a href="/academics.html#faculty" class="hover:text-white transition focus-visible">Faculty</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Calendar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Admissions</h3>
+          <ul class="space-y-2">
+            <li><a href="/admissions.html" class="hover:text-white transition focus-visible">Apply</a></li>
+            <li><a href="/admissions.html#tuition" class="hover:text-white transition focus-visible">Tuition</a></li>
+            <li><a href="/admissions.html#aid" class="hover:text-white transition focus-visible">Financial Aid</a></li>
+            <li><a href="#contact" class="hover:text-white transition focus-visible">Visit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Connect</h3>
+          <ul class="space-y-2">
+            <li><a href="#contact" class="hover:text-white transition focus-visible">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">News</a></li>
+            <li><a href="#" class="hover:text-white transition focus-visible">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Stay Connected</h3>
+          <div class="space-y-3 mb-6">
+            <p class="text-sm">123 Education Lane<br>City, State 12345</p>
+            <p class="text-sm">(555) 123-4567</p>
+            <p class="text-sm">info@exampleschool.edu</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center text-sm">
+        <p>&copy; 2026 Example School. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/main.js"></script>
+  <noscript>
+    <style>
+      .reveal { opacity: 1; transform: translateY(0); }
+    </style>
+  </noscript>
+</body>
+</html>
