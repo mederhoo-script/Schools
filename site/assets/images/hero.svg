@@ -6,6 +6,4 @@
     </linearGradient>
   </defs>
   <rect width="1920" height="1080" fill="url(#heroGrad)"/>
-  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="72" font-family="Arial, sans-serif" font-weight="bold">Welcome to</text>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="96" font-family="Arial, sans-serif" font-weight="bold">Bright Future Academy</text>
 </svg>
